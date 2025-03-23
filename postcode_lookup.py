@@ -28,10 +28,10 @@ window.columnconfigure(0, minsize=250, weight=1)
 window.wm_iconbitmap(path_to_ico)
 
 # Modal window show error
-#def show_error(self, *args):
-#    err = traceback.format_exception(*args)
-#    tk.messagebox.showerror('Exception',err)
-#    progressbar.stop()
+def show_error(self, *args):
+    err = traceback.format_exception(*args)
+    tk.messagebox.showerror('Exception',err)
+    progressbar.stop()
 
 #tk.Tk.report_callback_exception = show_error
 
